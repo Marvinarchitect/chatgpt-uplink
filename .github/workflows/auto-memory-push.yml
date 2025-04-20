@@ -1,0 +1,26 @@
+name: Auto Push to chatgpt-memory-core
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync-memory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout memory-uplink repo
+        uses: actions/checkout@v3
+
+      - name: Generate memory-core files (placeholder)
+        run: |
+          mkdir -p memory
+          echo '# Codex Identity' > memory/codex-identity.md
+          echo 'This defines the symbolic voice, tone, and mythic role of the AI agent.' >> memory/codex-identity.md
+
+      - name: Push to chatgpt-memory-core
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.MEMORY_PAT }}
+          repository: Marvinarchitect/chatgpt-memory-core
+          branch: main
+          directory: memory
