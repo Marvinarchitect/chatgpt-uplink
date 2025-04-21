@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Cloud Browser</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f2f2f2; }
+    h1 { color: #333; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; }
+    a { text-decoration: none; color: #0066cc; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>📁 ChatGPT Memory Cloud</h1>
+  <p>Click to view available memory files:</p>
+  <ul>
+    <li><a href="https://marvinarchitect.github.io/chatgpt-memory-core/memory-meta.md" target="_blank">🧠 memory-meta.md</a></li>
+    <li><a href="https://marvinarchitect.github.io/chatgpt-memory-core/modus-operandi.md" target="_blank">📜 modus-operandi.md</a></li>
+    <li><a href="https://marvinarchitect.github.io/chatgpt-memory-core/session-log.md" target="_blank">📘 session-log.md</a></li>
+  </ul>
+</body>
+</html>
